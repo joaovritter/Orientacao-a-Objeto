@@ -14,8 +14,8 @@ public class J7notas {
 			}
 		}
 		
-			 int maior = n[0][0];
-			 int menor = n[0][0];
+			 int maior = -9999;
+			 int menor = 9999;
 			 
 			 for (int i =0; i<10;i++) {
 				 for (int j=0; j<10;j++) {
