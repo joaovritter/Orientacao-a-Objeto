@@ -12,8 +12,8 @@ public class J6maiorEmenor {
 		n[i] = teclado.nextInt();
 		}
 	 
-	 int maior = n[0];
-	 int menor = n[0];
+	 int maior = -9999;
+	 int menor = 9999;
 	 for (int i =0; i<10;i++) {
 		 
 		 if (n[i]>maior)
