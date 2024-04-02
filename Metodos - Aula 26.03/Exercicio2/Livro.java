@@ -11,13 +11,23 @@ public class Livro {
 	public String retornar() {
 		return titulo+" "+autor+" "+anoPubli+" "+genero+" "+emprestado;
 	}
-	public Boolean emprestimo() {
-	emprestado = true;
-	return emprestado;
+	public void emprestimo() {
+		if (!emprestado){
+			emprestado = true;
+			System.out.println ("Livro disponivel");
+		}
+		else {
+			System.out.println ("livro nao disponivel");
+		}
 	}
-	public Boolean devolucao () {
-		emprestado = false;
-		return emprestado;
+	public devolucao () {
+		if(emprestado){
+			emprestado = false;
+			System.out.println ("Livro devolvido");
+		}
+		else {
+			System.out.println ("livro nao pode ser devolvido");
+		}
 	}
 }
 
