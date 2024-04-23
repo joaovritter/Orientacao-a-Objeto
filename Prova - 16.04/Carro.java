@@ -9,16 +9,13 @@ public class Carro {
 	}
 	public void setMarca(String marca) {
 		this.marca = marca;
-		System.out.println(marca);
 	}
 	public String getModelo() {
 		return modelo;
 	}
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
-		System.out.println(modelo);
 	}
-	
 	
 	
 	public Carro(String marca) {
@@ -36,14 +33,13 @@ public class Carro {
 		this.marca = marca;
 	}
 
-	public Boolean mostrarMarca(String marca) {
+	public void mostrarMarca(String marca) {
 		if (!marca.isEmpty() ) {
 		System.out.println("Marca: "+marca);
 		}
 		else {
 			System.out.println("Nenhum Carro cadastrado!");
-		}
-	return false;		
+		}		
 	}
 	
 	public void atribuirMarcaModelo(String marca, String modelo) {
@@ -52,14 +48,14 @@ public class Carro {
 		this.modelo = modelo;
 	}
 	
-	public Boolean mostrarMarcaModelo(String marca, String modelo) {
+	public void mostrarMarcaModelo(String marca, String modelo) {
 		if (!marca.isEmpty() && !modelo.isEmpty()) {
 		System.out.println("Marca: "+marca+ "   Modelo: "+modelo);
 		}
 		else {
 			System.out.println("Nenhum Carro cadastrado!");
 		}
-	return false;		
+		
 	}
 	
 
