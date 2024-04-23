@@ -12,7 +12,7 @@ public class Principal {
 			int opcao = teclado.nextInt();
 			int op;
 			if (opcao==1) {
-			Carro c1 = new Carro ("");
+			Carro c1 = new Carro (null);
 				do {
 					System.out.println("Digite uma opcao de acordo com o menu: ");
 					System.out.println("1- Exibir informacoes do carro");
@@ -32,7 +32,7 @@ public class Principal {
 						
 					case 3:
 						System.out.println("Obtendo Marca do Carro:");
-						c1.setMarca(c1.marca);
+						c1.getMarca();
 						break;
 						
 					case 4:
@@ -48,7 +48,7 @@ public class Principal {
 			
 			
 			if (opcao==2) {
-				Carro c2 = new Carro ("");
+				Carro c2 = new Carro (null,null);
 					do {
 						System.out.println("Digite uma opcao de acordo com o menu: ");
 						System.out.println("1- Exibir informacoes do carro");
@@ -68,9 +68,8 @@ public class Principal {
 							break;
 							
 						case 3:
-							System.out.println("Obtendo Marca e Modelo do Carro:");
-							c2.setMarca(c2.marca);
-							c2.setModelo(c2.modelo);
+							System.out.println("Obtendo Marca e Modelo do Carro:"+c2.getMarca()+" \n"+ c2.getModelo());
+						
 							break;
 							
 						case 4:
