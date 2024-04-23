@@ -75,7 +75,7 @@ public class Principal {
 							
 						case 4:
 							System.out.println("Encerrando programa...");		
-							break;
+							return;
 							
 						default: 
 							System.out.println("Tecla invalida, Digite novamente!");
